@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const keys = require('./config/keys');
+const keys = require('./config/config');
 const authRoutes = require('./routes/auth');
 const userNumber = require('./routes/usersNum');
 

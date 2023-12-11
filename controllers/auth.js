@@ -1,6 +1,6 @@
-const User = require('../models/User');
+const User = require('../models/user');
 const jwt = require('jsonwebtoken');
-const keys = require('../config/keys');
+const keys = require('../config/config');
 
 module.exports.login = async function(req, res) {
     const candidate = await User.findOne({email: req.body.email});
@@ -16,11 +16,11 @@ module.exports.login = async function(req, res) {
             });
 
         } else {
-            res.status(401).json({message:"Пароли не совпадают. Попробуйте снова."});
+            res.status(401).json({message:"Неправильный пароль."});
         }
 
     } else {
-        res.status(404).json({message:"Такого пользователя не существует."})
+        res.status(404).json({message:"Данной учетной записи не существует."})
     }
 }
 
@@ -28,7 +28,7 @@ module.exports.register = async function(req, res) {
     const candidate = await User.findOne({email:req.body.email});
     if (candidate){
         res.status(409).json({
-            message:"Такой email уже занят."
+            message:"Данная учетная запись уже существует."
         });
     } else {
         const user = new User({

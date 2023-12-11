@@ -1,4 +1,4 @@
-const User = require('../models/User');
+const User = require('../models/user');
 
 module.exports.userNum = async function(req, res) {
     try{
@@ -8,7 +8,7 @@ module.exports.userNum = async function(req, res) {
 
      } catch(err){
         console.log(err);
-        res.status(418).json({message:"Я - чайник!"});  
+        res.status(406).json({message:"Непредвиденная ошибка. Попробуйте снова."});  
 
      }
 }
