@@ -1,3 +1,4 @@
 module.exports = {
-    mongoURI: 'mongodb://127.0.0.1:27017/NikitosTask'
+    mongoURI: 'mongodb://127.0.0.1:27017/DenisTask',
+    jwt: 'Capybara'
 }
