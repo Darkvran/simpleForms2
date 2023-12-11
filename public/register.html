@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <title>Итоговая работа</title>
+</head>
+<body class="flex flex-col items-center bg-[url('img/background.jpg')] bg-cover h-screen">
+    <header class="flex flex-wrap justify-between w-full p-5">
+        <img src="img/logo.png" class="animate-pulse" width="250">
+        <nav class="h-full font-ptSer font-bold text-white">
+            <ul class="h-full flex gap-x-10 mr-10">
+                <li class="flex flex-col place-content-center h-full text-xl rounded"><a href="index.html">Главная</a></li>
+                <li class="flex flex-col place-content-center h-full text-xl rounded"><a href="auth.html">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex flex-col items-center mb-auto"> 
+        <div class="text-center leading-none my-6">
+        <h1 class="text-3xl text-white font-ptSer">Итоговая работа по интернет технологиям</h1>
+        <span class="text-sm text-white font-ptSan">Работа выполнена студентом группы И426Б Ильясовым Денисом</span>
+        </div>
+        <div class="flex flex-wrap place-content-center w-full">
+            <form class="flex flex-col mx-auto w-1/3 border p-5 space-y-4">
+                <h2 class="text-lg text-center underline underline-offset-8 mb-2 text-white">Регистрация</h2>
+                <div class="mb-2">
+                    <label class="block mb-2 text-sm font-medium text-white">Ваше имя</label>
+                    <input type="text" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                  </div>
+                <div class="mb-2">
+                  <label for="email" class="block mb-2 text-sm font-medium text-white">Ваша почта</label>
+                  <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="почта@хиханьки.ха" required>
+                </div>
+                <div class="mb-2">
+                  <label for="password" class="block mb-2 text-sm font-medium text-white">Ваш пароль</label>
+                  <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                </div>
+                <input type="button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-2 border border-gray-400 rounded shadow" id="sendReqForReg" value = "Отправить">
+            </form>
+        </div>
+    </main>
+
+    <footer class="w-5/6 my-4 h-20">
+        <div class="w-full h-full hover:animate-pulse rounded-full bg-gradient-to-r from-startGrad to-endGrad"></div>
+    </footer>
+</body>
+</html>
